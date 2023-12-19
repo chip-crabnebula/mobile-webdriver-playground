@@ -1,4 +1,9 @@
-# Tauri + Preact + Typescript
+# mobile-webdriver-playground
+
+⚠️ Nothing in this repository is supported. ⚠️
+A playground for running WebDriver tests against a default `create-tauri-app` applications.
+
+## Tauri + Preact + Typescript
 
 This template should help get you started developing with Tauri, Preact and Typescript in Vite.
 
