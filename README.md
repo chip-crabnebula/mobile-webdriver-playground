@@ -1,6 +1,7 @@
 # mobile-webdriver-playground
 
 ⚠️ Nothing in this repository is supported. ⚠️
+
 A playground for running WebDriver tests against a default `create-tauri-app` applications.
 
 ## Tauri + Preact + Typescript
