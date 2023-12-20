@@ -11,6 +11,9 @@
   },
   "tauri": {
     "bundle": {
+      "iOS": {
+        "developmentTeam": "A52TM59584"
+      },
       "active": true,
       "targets": "all",
       "identifier": "sh.chip.androiddriver",
