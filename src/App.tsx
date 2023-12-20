@@ -1,6 +1,6 @@
 import { useState } from "preact/hooks";
 import preactLogo from "./assets/preact.svg";
-import { invoke } from "@tauri-apps/api/primitives";
+import {invoke} from "@tauri-apps/api/core";
 import "./App.css";
 
 function App() {
