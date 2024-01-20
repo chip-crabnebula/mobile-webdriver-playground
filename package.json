@@ -21,7 +21,7 @@
     "@tauri-apps/cli": "^2.0.0-alpha.18",
     "internal-ip": "^7.0.0",
     "typescript": "^5.0.2",
-    "vite": "^4.4.4",
+    "vite": "^4.5.2",
     "webdriverio": "^8.26.3"
   }
 }
