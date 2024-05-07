@@ -1,3 +1,5 @@
+import kotlin.io.path.Path
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -7,6 +9,14 @@ plugins {
 android {
     compileSdk = 33
     namespace = "sh.chip.android_driver"
+    signingConfigs {
+      create("release") {
+        keyAlias = "androiddebugkey"
+        keyPassword = "android"
+        storeFile = file(Path(System.getProperty("user.home")).resolve(Path(".android/debug.keystore")))
+        storePassword = "android"
+      }
+    }
     defaultConfig {
         manifestPlaceholders["usesCleartextTraffic"] = "false"
         applicationId = "sh.chip.android_driver"
@@ -29,6 +39,7 @@ android {
         }
         getByName("release") {
             isMinifyEnabled = true
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 *fileTree(".") { include("**/*.pro") }
                     .plus(getDefaultProguardFile("proguard-android-optimize.txt"))
