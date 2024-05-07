@@ -4,13 +4,24 @@
 
 A playground for running WebDriver tests against a default `create-tauri-app` applications.
 
-## Tauri + Preact + Typescript
+## Android
 
-This template should help get you started developing with Tauri, Preact and Typescript in Vite.
+Follow Tauri Android requirements as listed here to set up your environment https://beta.tauri.app/start/prerequisites/#android.
 
-## Recommended IDE Setup
+The application build application must already be installed on the target device/emulator.
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+```console
+npm install
+npm run tauri android build
+```
+
+Then, you can install the signed (with a developer certificate) apk with
+
+```console
+adb install src-tauri/gen/android/app/build/outputs/apk/universal/release/app-universal-release.apk
+```
+
+Now that the application is installed, it can be tested. First, start appium server in a separate terminal with `npm run appium:server`. Then, you are free to run the tests with `npm run test:webdriver:android`.
 
 ## TODO
 
