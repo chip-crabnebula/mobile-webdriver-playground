@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    android_driver_lib::run()
+    tauri2beta_lib::run()
 }

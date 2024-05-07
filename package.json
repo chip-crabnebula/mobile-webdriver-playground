@@ -1,27 +1,15 @@
 {
   "name": "android-driver",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
     "tauri": "tauri",
     "test:webdriver:android": "node webdriverio-android.js",
     "test:webdriver:ios": "node webdriverio-ios.js"
   },
-  "dependencies": {
-    "@tauri-apps/api": "^2.0.0-alpha.12",
-    "@tauri-apps/plugin-shell": "^2.0.0-alpha.3",
-    "preact": "^10.16.0"
-  },
   "devDependencies": {
-    "@preact/preset-vite": "^2.5.0",
-    "@tauri-apps/cli": "^2.0.0-alpha.18",
-    "internal-ip": "^7.0.0",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.4",
+    "@tauri-apps/cli": ">=2.0.0-beta.0",
     "webdriverio": "^8.26.3"
   }
 }
